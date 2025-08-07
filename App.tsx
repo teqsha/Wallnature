@@ -1,23 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context';
+
+import Navigation from './src/compnent/navigation/Navigation'
 
 const App = () => {
   return (
-    <SafeAreaView style={{flex:1,backgroundColor:'lightblue'}}>
-      <Text style={styles.container}>App</Text>
-    </SafeAreaView>
+  <Navigation/>
   )
 }
 
 export default App
-
-const styles = StyleSheet.create({
-  container:{
-    justifyContent:'center',
-    alignItems:'center',
-    fontWeight:'bold',
-    alignSelf:'center',
-    fontSize:20
-  }
-})
