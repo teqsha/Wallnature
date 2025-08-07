@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const wallpaperScreen = () => {
+const WallPaperScreen = () => {
   return (
     <View>
       <Text>wallpaperScreen</Text>
@@ -9,4 +9,4 @@ const wallpaperScreen = () => {
   )
 }
 
-export default wallpaperScreen
+export default WallPaperScreen
