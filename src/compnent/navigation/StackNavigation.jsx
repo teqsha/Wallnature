@@ -4,9 +4,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import HomeScreen from '../screen/HomeScreen';
 import WallPaperScreen from '../screen/WallPaperScreen';
 
-
-
-
 const Stack = createNativeStackNavigator();
 const StackNavigation = () => {
   return (
