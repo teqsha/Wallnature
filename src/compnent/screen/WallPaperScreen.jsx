@@ -1,10 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
-<<<<<<< HEAD
 import { SafeAreaView } from 'react-native-safe-area-context';
 import {items} from '../screen/WallpaperImage';
-=======
->>>>>>> c7ee3f1d3bfb85a5d523e6237c0a8c1e8b94ff57
 
 const WallPaperScreen = ({ title, image, onPress }) => {
   return (
