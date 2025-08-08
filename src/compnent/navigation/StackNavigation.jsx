@@ -5,8 +5,6 @@ import HomeScreen from '../screen/HomeScreen';
 import WallPaperScreen from '../screen/WallPaperScreen';
 
 
-
-
 const Stack = createNativeStackNavigator();
 const StackNavigation = () => {
   return (
