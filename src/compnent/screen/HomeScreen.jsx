@@ -1,40 +1,40 @@
-import { StyleSheet, Text, View ,FlatList} from 'react-native'
+import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
- import {WallPaperScreen} from '../screen/WallPaperScreen';
- 
+import WallPaperScreen from '../screen/WallPaperScreen';
+import {wallpaperImage} from '../screen/WallpaperImage';
+
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <View style={styles.Container}>
-        <Text styles={styles.heading}>wallpaper</Text>
+    <View style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <Text style={styles.heading}>wallpaper</Text>
         <FlatList
-        data={WallPaperScreen}
-        keyExtractor={(item) => item.id}
-        numColumns={2}
-        renderItem={({ item }) => (
-          <WallPaperScreen title={item.title} image={item.image} onPress={() => {}} />
-        )}
-        contentContainerStyle={styles.flatList}
-      />
+          data={wallpaperImage}
+          keyExtractor={(item) => item.id}
+          numColumns={2}
+          renderItem={({ item }) => (
+            <WallPaperScreen title={item.title} image={item.image} onPress={() => { }} />
+          )}
+          contentContainerStyle={styles.flatList}
+        />
       </View>
-    </SafeAreaView>
+    </View>
   )
 }
 
 export default HomeScreen
 
 const styles = StyleSheet.create({
-  Container: {
+  container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    // backgroundColor: '#000',
+    paddingHorizontal: 10,
+    paddingTop: 40,
   },
-    heading: {
+  heading: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#fff',
+    color: 'black',
     marginBottom: 10,
     alignSelf: 'center',
   },
